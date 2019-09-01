@@ -1,0 +1,118 @@
+#croot
+{
+  display: flex;
+  font-family: Comic Sans MS;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-style: groove;
+  padding: 0.6%;
+  background-color: black;
+  color: aliceblue;
+}
+
+#navleft
+{
+  flex: 30%;
+  float: left;
+  width: 19%;
+  border-style: ridge;
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+}
+
+#navleft a:visited
+{
+  color: whitesmoke;
+}
+
+#navleftlinks:hover
+{
+  background-color: crimson;
+}
+
+#conright
+{
+  flex: 60%;
+  float: right;
+  border-style: ridge;
+  overflow: auto;
+  width: 78%;
+  margin-right: 0.4%;
+  text-align: justify;
+  background-color: black;
+  color: aliceblue;
+}
+
+#froot
+{
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: black;
+  color: aliceblue;
+}
+
+#hroot
+{
+  display: flex;
+  background-color: black;
+  font-size: 20px;
+  width:  99.90%;
+  border-radius: 10px;
+  margin-top: 0.5%;
+  color: aliceblue;
+}
+
+#hroot::after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#hleft
+{
+  flex: 30%;
+  float: left;
+  width: 100%;
+  text-align: left;
+  margin-left: 1%;
+}
+
+#hcenter
+{
+  flex: 40%;
+  float: left;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+}
+
+#hright
+{
+  flex: 30%;
+  float: left;
+  width: 100%;
+  text-align: right;
+  color: aliceblue;
+  margin-top: 0.5%;
+  margin-right: 0.5%;
+}
+
+#search_t
+{
+  border-radius: 5px;
+  width: 40%;
+}
+
+#search_b
+{
+  border-radius: 5px;
+  width: 40%;
+}
+
+#item_list
+{
+  
+}
