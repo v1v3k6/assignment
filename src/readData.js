@@ -10,9 +10,11 @@ class ReadData extends React.Component
       if(typeof(jsonData[data])=="object")
         ret+="<div>"+this.readData(jsonData[data])+"<div>";
       if(typeof(jsonData[data])!="object" && data!="Brand" && data!="0" && data!="1")
-        ret+="<div>" + data + " : " + jsonData[data]+"</div>";
+        ret+="<div id='devicePane'>" + data + " => " + jsonData[data]+"</div>";
+      if(data=="Camera")
+      ret+="<br />";
     }
-    return ret;
+    return "<div>"+ret+"</div>";
   }
   render()
   {

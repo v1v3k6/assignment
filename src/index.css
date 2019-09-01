@@ -47,3 +47,14 @@
   background-color: crimson;
   color: white;
 }
+
+#devicePane
+{
+  border-style: groove;
+  text-align: center;
+}
+
+#devicePane:hover
+{
+  color: crimson;
+}
