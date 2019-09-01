@@ -1,20 +1,25 @@
 import React from 'react';
-function readData(jsonData)
+const product_data = require('./products.json');
+class ReadData extends React.Component
 {
-  var ret;
-  for(let data in jsonData)
+  readData(jsonData)
   {
-    if(typeof(jsonData[data])=="object")
+    var ret="";
+    for(let data in jsonData)
     {
-      ret+=<div><br />{data}: {readData(jsonData[data])}</div>;
-      document.write("<br />"+data);
+      if(typeof(jsonData[data])=="object")
+        ret+="<div>"+this.readData(jsonData[data])+"<div>";
+      if(typeof(jsonData[data])!="object" && data!="Brand" && data!="0" && data!="1")
+        ret+="<div>" + data + " : " + jsonData[data]+"</div>";
     }
-    else
-        ret+=<div><br />{jsonData[data]}</div>;
-    if(typeof(jsonData[data])!="object")
-      document.write("<br />"+data+" : "+jsonData[data]);
+    return ret;
   }
-  document.write("<br />");
-  return ret;
+  render()
+  {
+    document.getElementById('content').innerHTML = this.readData(product_data);
+    return(
+      <div></div>
+    );
+  }
 }
-export default readData;
+export default ReadData;

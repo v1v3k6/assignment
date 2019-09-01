@@ -1,6 +1,4 @@
 import React from 'react';
-import readData from './readData';
-const product_data = require('./products.json');
 class App extends React.Component
 {
   render() {
@@ -14,8 +12,7 @@ class App extends React.Component
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
           </div>
-          <div class="content">
-            {document.write(readData(product_data))}
+          <div id="content">
           </div>
         </div>
         <footer id="froot">Footer</footer>

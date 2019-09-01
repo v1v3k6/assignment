@@ -8,10 +8,10 @@
                 "RAM" : "6/8/12 GB",
                 "Camera" : "12MP+12MP+16MP"
             },
-            "Pics":{
-                "img1": "res/pic_SGN10_-aura-black.jpg",
-                "img2": "res/pic_SGN10_-aura-white.jpg"
-            }
+            "Pics":[
+                "res/pic_SGN10_-aura-black.jpg",
+                "res/pic_SGN10_-aura-white.jpg"
+            ]
         },
         "Asus":{
             "Model" : "Zenfone 6Z",
@@ -21,10 +21,10 @@
                 "RAM" : "6/8/12 GB",
                 "Camera" : "12MP+12MP+16MP"
             },
-            "Pics":{
-                "img1": "res/pic_SGN10_-aura-black.jpg",
-                "img2": "res/pic_SGN10_-aura-white.jpg"
-            }
+            "Pics":[
+                "res/pic_SGN10_-aura-black.jpg",
+                "res/pic_SGN10_-aura-white.jpg"
+            ]
         }
     }
 }
