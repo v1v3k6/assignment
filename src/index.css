@@ -58,3 +58,14 @@
 {
   color: crimson;
 }
+
+#products
+{
+  border-style: outset;
+}
+
+#Pics
+{
+  height: 50%;
+  width: 49.99%;
+}

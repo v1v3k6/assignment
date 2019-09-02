@@ -16,7 +16,7 @@ class App extends React.Component
             ))}</ul>);
       case "Pics":
           return(
-            <li><img src={jsonObj.Brand[manufacturers].Pics[0]} alt={manufacturers} /><img src={jsonObj.Brand[manufacturers].Pics[1]} alt={manufacturers} /></li>
+            <div id={specs}><img id="Pics" src={jsonObj.Brand[manufacturers].Pics[0]} alt={manufacturers} /><img id="Pics" src={jsonObj.Brand[manufacturers].Pics[1]} alt={manufacturers} /></div>
           );
       default:
         return;
@@ -35,7 +35,7 @@ class App extends React.Component
           </div>
           <div id="content">
             {Object.keys(product_data.Brand).map(manufacturers => (
-              <ul id={manufacturers}>
+              <ul id="products">
                 <h1>{manufacturers}:</h1>
                 {Object.keys(product_data.Brand[manufacturers]).map(specs => (
                   <div id={specs}>{this.parseData(product_data,manufacturers, specs)}</div>
