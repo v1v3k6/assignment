@@ -9,5 +9,3 @@ elif [ -z $msg2 ]; then
     msg2="Auto commit description"
 fi
 git add * -f && git commit -m "$msg1" -m "$msg2" && git push origin master
-
-    
