@@ -1,18 +1,47 @@
 import React from 'react';
+const product_data = require('./products.json');
 class App extends React.Component
 {
+  parseData(jsonObj,manufacturers,specs)
+  {
+    switch(specs)
+    {
+      case "Model":
+          return (<li>{specs} : {jsonObj.Brand[manufacturers].Model}</li>);
+      case "Year":
+          return (<li>{specs} : {jsonObj.Brand[manufacturers].Year}</li>);
+      case "Specifications":
+          return (<ul><h4>{specs} :</h4> {Object.keys(jsonObj.Brand[manufacturers].Specifications).map(intspecs => (
+            <li id={intspecs}>{intspecs} : {jsonObj.Brand[manufacturers].Specifications[intspecs]}</li>
+            ))}</ul>);
+      case "Pics":
+          return(
+            <li><img src={jsonObj.Brand[manufacturers].Pics[0]} alt={manufacturers} /><img src={jsonObj.Brand[manufacturers].Pics[1]} alt={manufacturers} /></li>
+          );
+      default:
+        return;
+    }
+  }
   render() {
     return (
       <div className="App">
         <header id="hroot">Header</header>
         <div id="croot">
-          <div class="topnav">
-            <a class="active" href="#home">Home</a>
+          <div className="topnav">
+            <a className="active" href="#home">Home</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
           </div>
           <div id="content">
+            {Object.keys(product_data.Brand).map(manufacturers => (
+              <ul id={manufacturers}>
+                <h1>{manufacturers}:</h1>
+                {Object.keys(product_data.Brand[manufacturers]).map(specs => (
+                  <div id={specs}>{this.parseData(product_data,manufacturers, specs)}</div>
+                ))}
+              </ul>
+            ))}
           </div>
         </div>
         <footer id="froot">Footer</footer>

@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import ReadData from './ReadData';
+//import ReadData from './ReadData';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<ReadData />, document.getElementById('content'));
+//ReactDOM.render(<ReadData />, document.getElementById('content'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
