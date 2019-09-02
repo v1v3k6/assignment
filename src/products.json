@@ -9,8 +9,8 @@
                 "Camera" : "12MP+12MP+16MP"
             },
             "Pics":[
-                "./res/pic_SGN10_-aura-black.jpg",
-                "./res/pic_SGN10_-aura-white.jpg"
+                "../public/res/pic_SGN10_-aura-black.jpg",
+                "../public/res/pic_SGN10_-aura-white.jpg"
             ]
         },
         "Asus":{
@@ -22,8 +22,8 @@
                 "Camera" : "12MP+12MP+16MP"
             },
             "Pics":[
-                "./res/pic_SGN10_-aura-black.jpg",
-                "./res/pic_SGN10_-aura-white.jpg"
+                "../public/res/pic_SGN10_-aura-black.jpg",
+                "../public/res/pic_SGN10_-aura-white.jpg"
             ]
         }
     }

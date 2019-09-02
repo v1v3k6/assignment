@@ -7,12 +7,12 @@ class App extends React.Component
     switch(specs)
     {
       case "Model":
-          return (<li>{specs} : {jsonObj.Brand[manufacturers].Model}</li>);
+          return (<li key={specs}>{specs} : {jsonObj.Brand[manufacturers].Model}</li>);
       case "Year":
-          return (<li>{specs} : {jsonObj.Brand[manufacturers].Year}</li>);
+          return (<li key={specs}>{specs} : {jsonObj.Brand[manufacturers].Year}</li>);
       case "Specifications":
           return (<ul><h4>{specs} :</h4> {Object.keys(jsonObj.Brand[manufacturers].Specifications).map(intspecs => (
-            <li id={intspecs}>{intspecs} : {jsonObj.Brand[manufacturers].Specifications[intspecs]}</li>
+            <li key={intspecs} id={intspecs}>{intspecs} : {jsonObj.Brand[manufacturers].Specifications[intspecs]}</li>
             ))}</ul>);
       case "Pics":
           return(
