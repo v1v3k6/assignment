@@ -3,6 +3,7 @@
         "Samsung":{
             "Model" : "Galaxy Note 10",
             "Year" : 2019,
+            "Price" : "Rs. 1,00,000",
             "Specifications":{
                 "Storage" : "128/512 GB",
                 "RAM" : "6/8/12 GB",
@@ -16,6 +17,7 @@
         "Asus":{
             "Model" : "Zenfone 6Z",
             "Year" : 2019,
+            "Price" : "Rs. 55,000",
             "Specifications":{
                 "Storage" : "128/512 GB",
                 "RAM" : "6/8/12 GB",

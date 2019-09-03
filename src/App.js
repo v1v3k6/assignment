@@ -14,14 +14,13 @@ class App extends React.Component
           return (<ul><h4>{specs} :</h4> {Object.keys(jsonObj.Brand[manufacturers].Specifications).map(intspecs => (
             <li key={intspecs} id={intspecs}>{intspecs} : {jsonObj.Brand[manufacturers].Specifications[intspecs]}</li>
             ))}</ul>);
-      case "Pics":
-          return(
-            <div id={specs}><img id="Pics" src={jsonObj.Brand[manufacturers].Pics[0]} alt={manufacturers} /><img id="Pics" src={jsonObj.Brand[manufacturers].Pics[1]} alt={manufacturers} /></div>
-          );
+        case "Price":
+          return(<li key={specs}>{specs}: {jsonObj.Brand[manufacturers].Price}</li>);
       default:
         return;
     }
   }
+
   render() {
     return (
       <div className="App">
@@ -35,12 +34,16 @@ class App extends React.Component
           </div>
           <div id="content">
             {Object.keys(product_data.Brand).map(manufacturers => (
-              <ul id="products">
+              <div id="product">
+              <ul>
                 <h1>{manufacturers}:</h1>
                 {Object.keys(product_data.Brand[manufacturers]).map(specs => (
                   <div id={specs}>{this.parseData(product_data,manufacturers, specs)}</div>
                 ))}
               </ul>
+              <div><img id="Pics" src={product_data.Brand[manufacturers].Pics[0]} alt={manufacturers} /><img id="Pics" src={product_data.Brand[manufacturers].Pics[1]} alt={manufacturers} /></div><br />
+              <center><button>Add to Cart</button></center><br />
+              </div>
             ))}
           </div>
         </div>

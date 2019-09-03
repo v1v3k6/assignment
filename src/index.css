@@ -21,6 +21,9 @@
   font-size: 30px;
   text-align: center;
   border-radius: 30px;
+  clear: both;
+  position: relative;
+  width: 100%;
 }
 
 .topnav {
@@ -59,13 +62,17 @@
   color: crimson;
 }
 
-#products
+#product
 {
   border-style: outset;
+  width: 33.33%;
+  text-align: left;
+  border-radius: 10px;
+  float: left;
 }
 
 #Pics
 {
-  height: 50%;
+  height: 100%;
   width: 49.99%;
 }
