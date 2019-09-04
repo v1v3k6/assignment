@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './Header';
+import ReactDOM from 'react-dom';
 const product_data = require('./products.json');
 class App extends React.Component
 {
@@ -8,6 +10,7 @@ class App extends React.Component
     this.state={
       qty : 0
     };
+    this.AddToCart=this.AddToCart.bind(this);
   }
   parseData(jsonObj,manufacturers,specs)
   {
@@ -28,22 +31,23 @@ class App extends React.Component
     }
   }
 
-  AddToCart(val)
+  AddToCart()
   {
-
+    this.setState({
+      qty: this.state.qty + 1
+    });
   }
 
   render() {
     return (
       <div className="App">
-        <header id="hroot">Header</header>
+        <header id="hroot">
+            <div id="hinner">
+                <div id="hleft">Shopping Site Dummy</div>
+                <div id="hright">Cart: {this.state.qty}</div>
+            </div>
+        </header>
         <div id="croot">
-          <div className="topnav">
-            <a className="active" href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-          </div>
           <div id="content">
             {Object.keys(product_data.Brand).map(manufacturers => (
               <div id="product">

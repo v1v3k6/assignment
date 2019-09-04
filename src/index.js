@@ -2,17 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Header from './Header';
 //import Forms from './Forms';
 import * as serviceWorker from './serviceWorker';
-
-function cartVal(qty)
-{
-    return qty;
-}
+//import ReadData from './ReadData';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<Header />, document.getElementById('hroot'));
 //ReactDOM.render(<Forms />, document.getElementById('root'));
 //ReactDOM.render(<ReadData />, document.getElementById('content'));
 
