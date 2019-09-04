@@ -46,7 +46,6 @@ class App extends React.Component
   setHeader()
   {
     return(
-      
       <div id="hinner">
         <div id="hleft">Shopping Site Dummy</div>
         <div id="hright">Cart: {this.state.qty}</div>
