@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from './Header';
-import ReactDOM from 'react-dom';
 const product_data = require('./products.json');
 class App extends React.Component
 {
