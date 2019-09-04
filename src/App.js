@@ -2,6 +2,13 @@ import React from 'react';
 const product_data = require('./products.json');
 class App extends React.Component
 {
+  constructor(props)
+  {
+    super(props);
+    this.state={
+      qty : 0
+    };
+  }
   parseData(jsonObj,manufacturers,specs)
   {
     switch(specs)
@@ -19,6 +26,11 @@ class App extends React.Component
       default:
         return;
     }
+  }
+
+  AddToCart(val)
+  {
+
   }
 
   render() {
@@ -41,8 +53,8 @@ class App extends React.Component
                   <div id={specs}>{this.parseData(product_data,manufacturers, specs)}</div>
                 ))}
               </ul>
-              <div><img id="Pics" src={product_data.Brand[manufacturers].Pics[0]} alt={manufacturers} /><img id="Pics" src={product_data.Brand[manufacturers].Pics[1]} alt={manufacturers} /></div><br />
-              <center><button>Add to Cart</button></center><br />
+              <div><img height="500px" width="450px" id="Pics" src={product_data.Brand[manufacturers].Pics[0]} alt={manufacturers} /><img height="500px" width="450px" id="Pics" src={product_data.Brand[manufacturers].Pics[1]} alt={manufacturers} /></div><br />
+              <center><button onClick={this.AddToCart}>Add to Cart</button></center><br />
               </div>
             ))}
           </div>
