@@ -4,18 +4,6 @@
   border-radius: 10px;
 }
 
-#froot
-{
-  background-color: crimson;
-  color: aliceblue;
-  font-size: 30px;
-  text-align: center;
-  border-radius: 30px;
-  clear: both;
-  position: relative;
-  width: 100%;
-}
-
 #product
 {
   border-style: outset;
@@ -43,7 +31,6 @@
   font-size: 30px;
   border-radius: 30px;
   width: 98%;
-  margin-left: 1%;
   background-color: crimson;
   border-style: solid;
   text-align: center;
@@ -61,4 +48,22 @@
   float:right;
   width: 49%;
   text-align: right;
+}
+
+#froot
+{
+  border-radius: 30px;
+  width: 99.99%;
+}
+
+#finner
+{
+  background-color: crimson;
+  color: aliceblue;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 30px;
+  clear: both;
+  position: relative;
+  width: 100%;
 }

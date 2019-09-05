@@ -54,7 +54,10 @@ class App extends React.Component
   setFooter()
   {
     return(
-      <strong>Footer</strong>
+      <div id="finner">
+        <div id="address">Footer</div>
+        <div id="support"></div>
+      </div>
     );
   }
 
