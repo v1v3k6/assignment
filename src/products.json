@@ -41,6 +41,49 @@
                 "res/pic_MIK20P_1.png",
                 "res/pic_MIK20P_2.jpg"
             ]
+        },
+        "Vivo":{
+            "Model" : "V1",
+            "Year" : 2019,
+            "Price" : "Rs. 34,999",
+            "Specifications":{
+                "Storage" : "64/128 GB",
+                "RAM" : "6/8 GB",
+                "Camera" : "12MP+12MP+16MP"
+            },
+            "Pics":[
+                "res/pic_MIK20P_1.png",
+                "res/pic_MIK20P_2.jpg"
+            ]
+        },
+        
+        "htc":{
+            "Model" : "V1",
+            "Year" : 2019,
+            "Price" : "Rs. 34,999",
+            "Specifications":{
+                "Storage" : "64/128 GB",
+                "RAM" : "6/8 GB",
+                "Camera" : "12MP+12MP+16MP"
+            },
+            "Pics":[
+                "res/pic_MIK20P_1.png",
+                "res/pic_MIK20P_2.jpg"
+            ]
+        },
+        "lava":{
+            "Model" : "V1",
+            "Year" : 2019,
+            "Price" : "Rs. 34,999",
+            "Specifications":{
+                "Storage" : "64/128 GB",
+                "RAM" : "6/8 GB",
+                "Camera" : "12MP+12MP+16MP"
+            },
+            "Pics":[
+                "res/pic_MIK20P_1.png",
+                "res/pic_MIK20P_2.jpg"
+            ]
         }
     }
 }
