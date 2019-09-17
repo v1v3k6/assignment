@@ -4,13 +4,14 @@
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
+  z-index: -1;
 }
 
 #product
 {
-  border-style: outset;
+  border-style: ridge;
   text-align: left;
   margin-left: 1%;
   margin-right: 1%;
@@ -19,26 +20,33 @@
   display: inline-flex;
   border-radius: 10px;
   height: 50%;
+  overflow: auto;
+  z-index: -1;
 }
 
 img.Pics {
-  width: 40%;
-  height: 100%;
+  max-width: 40%;
+  max-height: 90%;
   margin-left: 1%;
   margin-right: 1%;
+  z-index: -1;
 }
 
 div.Pics
 {
   height: 100%;
   width: 100%;
-  display: flex;
+  display: inline-flex;
+  z-index: -1;
 }
 
 #hroot
 {
   border-radius: 30px;
-  width: 99.99%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
 }
 
 #hinner
@@ -47,29 +55,40 @@ div.Pics
   font-size: 30px;
   border-radius: 30px;
   width: 98%;
-  background-color: crimson;
   border-style: solid;
   text-align: center;
+  background-color: aliceblue;
+  z-index: 1;
 }
 
 #hleft
 {
   float:left;
-  width: 49%;
+  width: 48%;
   text-align: left;
+  background-color: aliceblue;
+  margin-left: 1%;
+  border-radius: 10px;
+  border-style: ridge;
 }
 
 #hright
 {
   float:right;
-  width: 49%;
+  width: 48%;
   text-align: right;
+  background-color: aliceblue;
+  margin-right: 1%;
+  border-radius: 10px;
+  border-style: ridge;
 }
 
 #froot
 {
+  margin-top: 1.4%;
   border-radius: 30px;
   width: 99.99%;
+  z-index: -1;
 }
 
 #finner
@@ -82,4 +101,5 @@ div.Pics
   clear: both;
   position: relative;
   width: 100%;
+  z-index: -1;
 }
