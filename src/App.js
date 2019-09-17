@@ -8,7 +8,6 @@ class App extends React.Component
     this.state={
       qty : 0
     };
-    this.AddToCart=this.AddToCart.bind(this);
   }
   parseData(jsonObj,manufacturers,specs)
   {
@@ -29,8 +28,9 @@ class App extends React.Component
     }
   }
 
-  AddToCart(val)
+  addToCart = (val) =>
   {
+    // eslint-disable-next-line
     if(val != -1 || this.state.qty>0)
     {
       this.setState({
@@ -73,8 +73,9 @@ class App extends React.Component
                 <div id={specs}>{this.parseData(product_data,manufacturers, specs)}</div>
               ))}
           </ul>
-          <div><img height="600px" width="550px" id="Pics" src={product_data.Brand[manufacturers].Pics[0]} alt={manufacturers} /><img height="500px" width="450px" id="Pics" src={product_data.Brand[manufacturers].Pics[1]} alt={manufacturers} /></div><br />
-          <center><button onClick={(param) => this.AddToCart(1)}>Add to Cart</button><button onClick={(param) => this.AddToCart(-1)}>Remove from Cart</button></center><br />
+          <div className="Pics" style={{backgroundImage: +"url("+product_data.Brand[manufacturers].Pics[0]+")"}}></div>
+          <div className="Pics" style={{backgroundImage: +"url("+product_data.Brand[manufacturers].Pics[1]+")"}}></div><br />
+          <center><button onClick={(param) => this.addToCart(1)}>Add to Cart</button><button onClick={(param) => this.addToCart(-1)}>Remove from Cart</button></center><br />
         </div>
         ))}
     </div>
