@@ -21,11 +21,18 @@
   height: 50%;
 }
 
+img.Pics {
+  width: 40%;
+  height: 100%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
 div.Pics
 {
-  display: inline-flex;
   height: 100%;
   width: 100%;
+  display: flex;
 }
 
 #hroot

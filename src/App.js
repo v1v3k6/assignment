@@ -73,8 +73,8 @@ class App extends React.Component
                 <div id={specs}>{this.parseData(product_data,manufacturers, specs)}</div>
               ))}
           </ul>
-          <div className="Pics" style={{backgroundImage: +"url("+product_data.Brand[manufacturers].Pics[0]+")"}}></div>
-          <div className="Pics" style={{backgroundImage: +"url("+product_data.Brand[manufacturers].Pics[1]+")"}}></div><br />
+          <div className="Pics"> <img className="Pics" alt={product_data.Brand[manufacturers].Pics[0]} src={product_data.Brand[manufacturers].Pics[0]} /></div>
+          <div className="Pics"> <img className="Pics" alt={product_data.Brand[manufacturers].Pics[1]} src={product_data.Brand[manufacturers].Pics[1]} /></div>
           <center><button onClick={(param) => this.addToCart(1)}>Add to Cart</button><button onClick={(param) => this.addToCart(-1)}>Remove from Cart</button></center><br />
         </div>
         ))}
